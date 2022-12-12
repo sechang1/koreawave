@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>한류 모아보기</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        background: rgb(231, 237, 243);
+      }
+      .section {
+        width: 50%;
+        height: 100%;
+        float: left;
+      }
+      div > a:hover {
+        color: rgb(252, 95, 142);
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var corona_data = google.visualization.arrayToDataTable([
+          ["문화콘텐츠 인기도", "퍼센트(%)"],
+          ["음식", 49.4],
+          ["뷰티", 48.9],
+          ["음악", 46.8],
+          ["패션", 44.7],
+          ["영화", 41.5],
+          ["게임", 39.0],
+          ["드라마", 37.8],
+          ["애니메이션", 35.8],
+          ["예능", 35.1]
+        ]);
+        var corona_options = {
+          title: "문화콘텐츠 인기도",
+        };
+        var corona_chart = new google.visualization.BarChart(
+          document.getElementById("barchart")
+        );
+        corona_chart.draw(corona_data, corona_options);
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: right; margin-top: 10px">
+      <a href="index.html" class="menu_home">🏠 홈으로</a>
+    </div>
+    <h2 class="title">해외 한류 현황 📈</h2>
+    <div class="menu">
+      <a href="information.html" class="menu_text">한류란?</a>
+      <a href="currentsituation.html" class="menu_text_now">해외 한류 현황</a>
+      <a href="kpop.html" class="menu_text">K-POP</a>
+      <a href="search.html" class="menu_text">국가별 한류 현황 검색하기</a>
+    </div>
+    <section class="section">
+      <div style="font-size: 35px" class="emphasis">
+        <p><b>한국 연상 이미지</b></p>
+        <h4 style="font-size: 20px; text-align: center">
+          <mark>설문조사 기준</mark>
+          <a class="title2" href="https://www.mcst.go.kr/kor/s_policy/dept/deptView.jsp?pDataCD=0417000000&pSeq=1578" target="_blank"
+      >➡️ 설문조사 사이트 바로가기 (클릭하면 새탭에서 열립니다.)<br /><br
+    /></a>
+      <div style="margin-top: 50px; margin-left: auto; margin-right: auto">
+        <table class="type">
+          <thead>
+            <tr>
+              <th>년도</th>
+              <th>
+                <a
+                  target="_blank"
+                  >2020년</a
+                >
+              </th>
+              <th>
+                <a
+                  target="_blank"
+                  >2021년</a
+                >
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>K-POP</td>
+              <td>16.8 %(1등)</td>
+              <td>14.0 %(1등)</td>
+            </tr>
+            <tr>
+              <td>한식</td>
+              <td>12.0 %(2등)</td>
+              <td>11.5 %(2등)</td>
+            </tr>
+            <tr>
+              <td>IT 산업</td>
+              <td>6.9 %(3등)</td>
+              <td>6.8 %(5등)</td>
+            </tr>
+            <tr>
+              <td>한류스타</td>
+              <td>6.6 %(4등)</td>
+              <td>7.0 %(4등)</td>
+            </tr>
+            <tr>
+              <td>드라마</td>
+              <td>6.4 %(5등)</td>
+              <td>7.5 %(3등)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section">
+      <div style="font-size: 35px" class="emphasis">
+        <p><b>자국 내 한국 문화콘텐츠 인기도</b></p>
+        <h4 style="font-size: 20px; text-align: center">
+          <mark>설문조사 기준</mark>
+          <a class="title2" href="https://www.mcst.go.kr/kor/s_policy/dept/deptView.jsp?pDataCD=0417000000&pSeq=1578" target="_blank"
+      >➡️ 설문조사 사이트 바로가기 (클릭하면 새탭에서 열립니다.)<br /><br
+    /></a>
+        </h4>
+        <div
+          id="barchart"
+          style="
+            width: 500px;
+            height: 400px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        ></div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <hr style="border-top: 1px dashed; color: #1d49a0" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="emphasis">
+      <p><b>코로나19 발생 이전 대비 소비량 변화</b></p>
+      <img
+          style="width: 800px; height: 300px"
+          class="image"
+          src="./img/k3.png"
+        />
+    </div>
+    </section>
+  </body>
+</html>

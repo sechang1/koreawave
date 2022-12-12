@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>한류 모아보기</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        background: rgb(231, 237, 243);
+      }
+      .section {
+        width: 50%;
+        height: 100%;
+        float: left;
+      }
+      div > a:hover {
+        color: rgb(252, 95, 142);
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var corona_data = google.visualization.arrayToDataTable([
+          ["해외 최선호 가수", "퍼센트(%)"],
+          ["방탄소년단", 26.7],
+          ["블랙핑크", 10.4],
+          ["아이유", 2.8],
+          ["리사", 2.4],
+          ["싸이", 2.2],
+        ]);
+        var corona_options = {
+          title: "해외 최선호 가수",
+        };
+        var corona_chart = new google.visualization.BarChart(
+          document.getElementById("barchart")
+        );
+        corona_chart.draw(corona_data, corona_options);
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: right; margin-top: 10px">
+      <a href="index.html" class="menu_home">🏠 홈으로</a>
+    </div>
+    <h2 class="title">K-POP 🎵</h2>
+    <div class="menu">
+      <a href="information.html" class="menu_text">한류란?</a>
+      <a href="currentsituation.html" class="menu_text">해외 한류 현황</a>
+      <a href="kpop.html" class="menu_text_now">K-POP</a>
+      <a href="search.html" class="menu_text">국가별 한류 현황 검색하기</a>
+    </div>
+    <section class="section">
+      <div style="font-size: 35px" class="emphasis">
+        <p><b>해외 기준 최선호 가수</b></p>
+        <h4 style="font-size: 20px; text-align: center">
+          <mark>설문조사 기준</mark>
+          <a class="title2" href="https://www.mcst.go.kr/kor/s_policy/dept/deptView.jsp?pDataCD=0417000000&pSeq=1578" target="_blank"
+      >➡️ 설문조사 사이트 바로가기 (클릭하면 새탭에서 열립니다.)<br /><br
+    /></a>
+        </h4>
+        <div
+          id="barchart"
+          style="
+            width: 500px;
+            height: 400px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        ></div>
+      </div>
+    </section>
+    <section class="section">
+      <div style="font-size: 35px" class="emphasis">
+        <p><b>이 시간 K-POP 차트 비교하기</b></p>
+        <h4 style="font-size: 20px; text-align: center">
+          <mark>2022년 12월 12일 00시 기준</mark>
+        </h4>
+      </div>
+      <p style="text-align: center">
+        음악 스트리밍 이름을 클릭하면 각 사이트 링크로 이동합니다.
+      </p>
+      <div style="margin-top: 50px; margin-left: auto; margin-right: auto">
+        <table class="type">
+          <thead>
+            <tr>
+              <th>순위</th>
+              <th>
+                <a
+                  href="https://www.melon.com/"
+                  target="_blank"
+                  >Melon
+                  (멜론)</a
+                >
+              </th>
+              <th>
+                <a
+                  href="https://www.genie.co.kr/"
+                  target="_blank"
+                  >지니
+                  (Genie)</a
+                >
+              </th>
+              <th>
+                <a
+                  href="https://music.bugs.co.kr/"
+                  target="_blank"
+                  >벅스
+                  (Bugs)</a
+                >
+              </th>
+              <th>
+                <a
+                  href="https://vibe.naver.com/today"
+                  target="_blank"
+                  >(네이버)바이브
+                  (VIBE)</a
+                >
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1위</td>
+              <td>사건의 지평선(윤하)</td>
+              <td>사건의 지평선(윤하)</td>
+              <td>사건의 지평선(윤하)</td>
+              <td>사건의 지평선(윤하)</td>
+            </tr>
+            <tr>
+              <td>2위</td>
+              <td>Hype boy(NewJeans)</td>
+              <td>Hype boy(NewJeans)</td>
+              <td>Hype boy(NewJeans)</td>
+              <td>After Like(아이브)</td>
+            </tr>
+            <tr>
+              <td>3위</td>
+              <td>ANTIFRAGILE(르세라핌)</td>
+              <td>마이웨이(저스디스)</td>
+              <td>WHEN I MOVE(카라)</td>
+              <td>Hype boy(NewJeans)</td>
+            </tr>
+            <tr>
+              <td>4위</td>
+              <td>마이웨이(저스디스)</td>
+              <td>ANTIFRAGILE(르세라핌)</td>
+              <td>ANTIFRAGILE(르세라핌)</td>
+              <td>ANTIFRAGILE(르세라핌)</td>
+            </tr>
+            <tr>
+              <td>5위</td>
+              <td>After Like(아이브)</td>
+              <td>그 겨울이 잠든 거리에서(경서예지&전건호)</td>
+              <td>After Like(아이브)</td>
+              <td>Nxde((여자)아이들)</td>
+            </tr>
+            <tr>
+              <td>6위</td>
+              <td>Nxde((여자)아이들)</td>
+              <td>Dreamers(정국&방탄소년단)</td>
+              <td>Attention(NewJeans)</td>
+              <td>LOVE DIVE(아이브)</td>
+            </tr>
+            <tr>
+              <td>7위</td>
+              <td>새삥(지코)</td>
+              <td>Nxde((여자)아이들)</td>
+              <td>Dreamers(정국&방탄소년단)</td>
+              <td>Attention(NewJeans)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <p style="text-align: center">
+      .
+      <p style="text-align: center">
+        .
+      </p>
+      <p style="text-align: center">
+        .
+      </p>
+      <p style="text-align: center">
+        .
+      </p>
+    </p>
+    <br /><hr style="border-top: 1px dashed; color: #1d49a0" />
+    <br />
+    <div class="emphasis">
+      <p><b>이 시각 차트 전체 1위 M/V</b></p>
+    </div>
+    <iframe
+      width="765"
+      height="472.5"
+      src="https://www.youtube.com/embed/BBdC1rl5sKY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="video"
+    ></iframe>
+  </body>
+</html>

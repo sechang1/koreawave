@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>한류 모아보기</title>
+    <style>
+      body {
+        background: rgb(231, 237, 243);
+      }
+      div > a:hover {
+        color: rgb(252, 95, 142);
+      }
+      #word {
+        font-family: "Italic";
+        margin: 60px 10px 0px 10px;
+        font-size: 20px;
+        color: blue;
+      }
+      #exp{
+        text-indent: 1em;
+      }
+    </style>
+  </head>
+  <body onload="init()">
+    <div style="text-align: right; margin-top: 10px">
+      <a href="index.html" class="menu_home">🏠 홈으로</a>
+    </div>
+    <h2 class="title">한류란? 🥳</h2>
+    <div class="menu">
+      <a href="information.html" class="menu_text_now">한류란?</a>
+      <a href="currentsituation.html" class="menu_text">해외 한류 현황</a>
+      <a href="kpop.html" class="menu_text">K-POP</a>
+      <a href="search.html" class="menu_text">국가별 한류 현황 검색하기</a>
+    </div>
+    <hr style="border-top: 1px dashed; color: #1d49a0" />
+    <br>
+    <p style="font-size: 40px; text-align: center;" class="title2" id="cheer"><b>한류란?</b><br><br></p>
+      <h4 style="font-size: 20px; text-align: center">
+        <a class="title1" href="https://terms.naver.com/entry.naver?docId=1221901&cid=40942&categoryId=31614" target="_blank"
+    >➡️ 지식백과 바로가기 (클릭하면 새탭에서 열립니다.)<br /><br
+  /></a>
+  <img
+    style="width: 1200px; height: 550px"
+   src="./img/hanru.png"
+    class="image"
+    alt="로고"
+  />
+    <div style="text-align: center; font-size: 12px;">
+      <p>
+        사진 제공: [네이버카페] 한국배우
+      </p>
+    </div>
+    <div class="explain">
+      <div style="margin-left: 5%; margin-right: 5%; margin-bottom: 2%">
+        <p id="exp"><br>
+          요약: 1990년대 말부터 아시아에서 일기 시작해 전세계적으로 퍼지고 있는 한국 대중문화의 열풍.<br><br>
+        </p>
+        <p id="exp">
+          1996년 한국의 텔레비전 드라마가 중국에 수출되고, 2년 뒤에는 가요가 알려지면서 아시아를 중심으로 대한민국의 대중문화가 대중적 인기를 얻게된 현상을 일컫는다. 
+          한류라는 용어는 한국의 대중문화가 알려지면서 대만, 중국, 한국 등에서 사용하기 시작하였으며, 중국에서 한국 대중문화에 대한 열풍이 일기 시작하자 2000년 2월 중국 언론에서 
+          이러한 현상을 표현하기 위해 '한류'라는 용어를 사용하여 널리 알려졌다.<br><br>
+        </p>
+        <p id="exp">
+          이후 한국 대중문화의 열풍은 중국뿐 아니라 타이완·홍콩·베트남·타이·인도네시아·필리핀 등 동남아시아 전역으로 확산되었다. 
+          특히 2000년 이후에는 드라마·가요·영화 등 대중문화만이 아니라 김치·고추장·라면·가전제품 등 한국 관련 제품의 이상적인 선호현상까지 나타났는데, 
+          포괄적인 의미에서는 이러한 모든 현상을 가리켜 한류라고 한다.<br><br>
+        </p>
+        <p id="exp">
+          심지어 대중문화의 수용 차원을 넘어 한국의 가수·영화배우·탤런트, 나아가 한국인과 한국 자체에 애정을 느껴 한국어를 익히거나 한국 제품을 사려는 
+          젊은이들까지 생겨났는데, 중국에서는 이들을 가리켜 '합한족(哈韓族)'이라는 신조어로 부른다.<br><br>
+        </p>
+        <p id="exp">
+          2010년대에 이르러서 한국의 대중음악, 영화, 드라마, 게임 등이 아시아를 넘어 중남미와 북미권, 
+          유럽까지 정착하고 있어 한류는 세계적인 현상이라고 할 수 있다. <br><br>
+        </p>
+      </div>
+    </div>
+    <hr style="border-top: 1px dashed; color: #1d49a0" />
+    <br>
+    <p style="font-size: 40px; text-align: center;" class="title2" id="cheer"><b>한류 시기별 특징(+코너)</b><br><br></p>
+      <h4 style="font-size: 20px; text-align: center">
+        <a class="title1" href="http://nationalatlas.ngii.go.kr/pages/page_65.php" target="_blank"
+    >➡️ 참고자료 바로가기 (클릭하면 새탭에서 열립니다.)<br /><br
+  /></a>
+  <div style="margin-top: 50px; margin-left: auto; margin-right: auto">
+    <table class="type">
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>
+            <a
+              target="_blank"
+              >한류 1.0</a
+            >
+          </th>
+          <th>
+            <a
+              target="_blank"
+              >한류 2.0</a
+            >
+          </th>
+          <th>
+            <a
+              target="_blank"
+              >한류 3.0</a
+            >
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>시기</td>
+          <td>1997-200년대 중반</td>
+          <td>2000년대 중반 - 2010년대 초반</td>
+          <td>2010년대 초반 이후</td>
+        </tr>
+        <tr>
+          <td>특징</td>
+          <td>한류의 태동 - 영상 콘텐츠 중심</td>
+          <td>한류의 확산 - 아이돌 스타 중심</td>
+          <td>한류의 다양화</td>
+        </tr>
+        <tr>
+          <td>핵심 장르</td>
+          <td>드라마</td>
+          <td>K-pop</td>
+          <td>K-Culture</td>
+        </tr>
+        <tr>
+          <td>장르</td>
+          <td>드라마, 영화, 가요</td>
+          <td>대중문화, 일부 문화 예술</td>
+          <td>전통문화, 문화 예술, 대중 문화</td>
+        </tr>
+        <tr>
+          <td>대상 국가</td>
+          <td>아시아</td>
+          <td>아시아, 유럽 일부, 아프리카, 중동 중남미, 미국 일부</td>
+          <td>전 세계</td>
+        </tr>
+        <tr>
+          <td>주요 소비자</td>
+          <td>소수의 마니아</td>
+          <td>10-20대</td>
+          <td>세계 시민</td>
+        </tr>
+        <tr>
+          <td>주요 매체</td>
+          <td>케이블 TV, 위성 TV, 인터넷</td>
+          <td>동영상 전문 사이트, SNS</td>
+          <td>모든 매체</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    <div style="text-align: center; font-size: 12px;">
+      <p>
+        표 제공: 대한민국 국가지도집 1
+      </p>
+    </div>
+    <div class="explain">
+      <div style="margin-left: 5%; margin-right: 5%; margin-bottom: 2%">
+        <p id="exp"><br>
+          요약: 1990년대 말부터 아시아에서 일기 시작해 전세계적으로 퍼지고 있는 한국 대중문화의 열풍.<br><br>
+        </p>
+        <p id="exp">
+          한류의 시작인 한류 1.0은 1997년 우리나라 드라마가 중국 CCTV를 통해 방영된 시점으로 보고 있다. 당시만 해도 (대중) 문화 교류가 활발하지 
+          않았던 중국에서 연속극의 인기가 지속적으로 유지되고 있었고, 한국 드라마와 함께 가요도 인기를 끌었다는 점에서 한류의 시초로 보고 있다. 
+          한류는 1990년대 후반부터 2000년대 초반에 중국, 타이완, 베트남 등에서 본격화되었다. 한국 드라마의 가족애, 휴머니티, 순애보 같은 사랑의 
+          주제는 아시아인에게 공감을 얻었고, 역동적인 댄스 음악에 많은 아시아 청소년들이 열광했다. 잠시 잠잠했던 한류는 2002년과 2003년에 우리나라의 
+          정서와 전통문화를 주제로 한 드라마를 통해 대대적인 성공을 다시 거두었고, 이와 함께 일본, 타이완, 홍콩 등 새로운 지역으로 확대되었다.<br><br>
+        </p>
+        <p id="exp">
+          한류 2.0은 2000년대 중반부터 2010년대 초반까지 새로운 모습으로 변하였고, 그 중심에는 K-Pop이 있었다. 물론, 1980년대 우리나라 몇몇 가수들이 
+          일본에서 상당한 인기를 끌었고, 1990년대 후반과 2000년도 초반에도 타이완, 중국 등지에서 활발한 활동을 한 적도 있었다. 그렇지만 한류 2.0시대에는 
+          아이돌 가수가 세계 무대에 진출하였고, 지리적으로 가깝고, 문화적으로 유사한 중국, 일본, 동남아시아 등을 뛰어넘어, 미국과 유럽의 언론 및 대중의 
+          관심을 뜨겁게 받았다는 측면에서 이전의 형태와 차별적이라 할 수 있다. 이와 더불어 동영상 전문 사이트와 사회 관계망 서비스(SNS)를 통한 한류의 
+          확산, 대한민국의 전통문화를 소재로 한 드라마의 전 세계적인 관심, 드라마와 음악 이외의 다양한 예술 분야로의 한류의 확대 등이 한류 2.0시대의 
+          또 다른 특징이다. <br><br>
+        </p>
+        <p id="exp">
+          한류 3.0 시대는 전통문화, 문화·예술, 문화 콘텐츠를 모두 포괄하는 것으로 K-Culture라 한다. 기존의 한류가 문화 콘텐츠를 중심으로 일부 
+          문화·예술 분야를 포함한 의미라면, K-Culture에는 전통문화뿐만 아니라, 세 가지 구성 요소가 유기적으로 연결된 결과라 할 수 있다. 한류의 
+          지역과 대상은 이미 아시아를 넘어 전 세계이며, 소수의 열성 팬을 넘어 보편적인 세 계인이라 할 수 있다. 이러한 현상은 한류의 교감 지역이 
+          전 세계인 것은 물론, ‘전 세계인이 함께하는 한류’라는 목표를 반영한 것이다. <br><br>
+        </p>
+      </div>
+    </div>
+    <hr style="border-top: 1px dashed; color: #1d49a0" />
+    <p style="font-size: 40px; text-align: center;" class="title2" id="cheer"><b>한류의 주제로 그림 그려보기!</b><br><br></p>
+    <p style="text-align: center;">한류 홍보에 동참해 주세요!  <input type="submit" value="전송"></p>
+    <h4 style="font-size: 20px; text-align: center">
+      <a class="title1" href="https://terms.naver.com/entry.naver?docId=1221901&cid=40942&categoryId=31614" target="_blank"
+  >➡️ 흰색 바탕에 마우스를 클릭하면 그림이 그려집니다!<br /><br
+  /></a>
+    <canvas id="myCanvas" style="background-color:whitesmoke; margin: auto; display: block;" width="1000" height="800">
+    </canvas>
+    <script>
+    var canvas, context;
+    function init() {
+      canvas = document.getElementById("myCanvas");
+      context = canvas.getContext("2d");
+    
+      context.lineWidth = 2;
+      context.strokeStyle = "red";
+    
+      canvas.addEventListener("mousemove", function (e) { move(e) }, false);
+      canvas.addEventListener("mousedown", function (e) { down(e) }, false);
+      canvas.addEventListener("mouseup", function (e) { up(e) }, false);
+      canvas.addEventListener("mouseout", function (e) { out(e) }, false);
+    }
+    
+    var startX=0, startY=0;
+    var drawing=false;
+    function draw(curX, curY) {
+      context.beginPath();
+      context.moveTo(startX, startY);
+      context.lineTo(curX, curY);
+      context.stroke();
+    }
+    function down(e) {
+      startX = e.offsetX; startY = e.offsetY;
+      drawing = true;
+    }
+    function up(e) { drawing = false; }
+    function move(e) {
+      if(!drawing) return;
+      var curX = e.offsetX, curY = e.offsetY;
+      draw(curX, curY);
+      startX = curX; startY = curY;
+    }
+    function out(e) { drawing = false; }
+    </script>
+  </body>
+</html>

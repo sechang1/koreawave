@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>한류 모아보기</title>
+    <style>
+      body {
+        background: rgb(231, 237, 243);
+      }
+      div > a:hover {
+        color: rgb(252, 95, 142);
+      }
+      #image {
+        float: left;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      h4 {
+        text-align: center;
+        color: #5a5a5a;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      style="width: 1400px; height: 250px"
+      src="./img/logo.png"
+      class="image"
+      alt="로고"
+    />
+    <div class="menu">
+      <a href="information.html" class="menu_text">한류란?</a>
+      <a href="currentsituation.html" class="menu_text">해외 한류 현황</a>
+      <a href="kpop.html" class="menu_text">K-POP</a>
+      <a href="search.html" class="menu_text">국가별 한류 현황 검색하기</a>
+    </div>
+    <img
+      style="width: 1100px; height: 650px"
+      src="./img/index.png"
+      class="image"
+      alt="로고"
+    />
+    <br />
+    <hr style="border-top: 1px dashed; color: #1d49a0" />
+    <div class="emphasis">
+      <p><b>최근 한류 활동 근황(월드컵)</b></p>
+    </div>
+    <iframe
+      width="765"
+      height="472.5"
+      src="https://www.youtube.com/embed/IwzkfMmNMpM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="video"
+    ></iframe>
+    <br />
+    <hr style="border-top: 1px dashed; color: #1d49a0" />
+    <div class="emphasis">
+      <p><b>한류 관련 기사</b></p>
+    </div>
+    <h4 style="text-align: center">
+      <mark>이미지를 클릭하면 기사링크가 새탭에서 열립니다.</mark>
+    </h4>
+    <span>
+      <a href="https://news.mt.co.kr/mtview.php?no=2022120914594015330" target="_blank">
+        <img height="250px" class="simage" src="./img/arti1.png" / id="image">
+      </a>
+      <a href="http://www.kihoilbo.co.kr/news/articleView.html?idxno=1007711" target="_blank">
+        <img height="250px" class="simage" src="./img/arti2.png" / id="image">
+      </a>
+      <a
+        href="https://www.ktv.go.kr/content/view?content_id=664294"
+        target="_blank"
+      >
+        <img height="250px" class="simage" src="./img/arti3.png" / id="image">
+      </a>
+    </span>
+  </body>
+</html>
